@@ -4,6 +4,6 @@
 #      client:
 #        registration:
 #          google:
-#            client-id: 23373858051-eutlg5e9islsupbv9633buafnvdqa0pb.apps.googleusercontent.com
-#            client-secret: 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
+#            client-id: 
+#            client-secret: 
 #            scope: openid, profile, email
