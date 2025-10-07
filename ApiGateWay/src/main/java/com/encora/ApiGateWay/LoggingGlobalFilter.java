@@ -15,10 +15,10 @@ public class LoggingGlobalFilter implements GlobalFilter, Ordered {
    @Override
    public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
        URI requestUri = exchange.getRequest().getURI();
-       logger.info(" Abhi-- Incoming request URI: {}", requestUri);
+       logger.info(" Prajwal-- Incoming request URI: {}", requestUri);
        return chain.filter(exchange)
            .then(Mono.fromRunnable(() -> {
-               logger.info(" Abhi-- Response status code: {}", exchange.getResponse().getStatusCode());
+               logger.info(" Prajwal-- Response status code: {}", exchange.getResponse().getStatusCode());
            }));
    }
    @Override
